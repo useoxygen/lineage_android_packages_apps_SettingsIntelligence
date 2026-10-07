@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2026 TextGavel. Licensed under the Apache License, Version 2.0.
+-->
+<resources>
+    <color name="cyclon_ink">#FFF2F2F5</color>
+    <color name="cyclon_muted">#FF8E8E96</color>
+    <color name="cyclon_hairline">#FF242427</color>
+</resources>

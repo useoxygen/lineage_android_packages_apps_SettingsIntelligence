@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2026 TextGavel. Licensed under the Apache License, Version 2.0.
+     Cyclon: Settings search as design draft 4 draws Settings home: an unfilled search field
+     outlined with a hairline, then flat result rows split by hairlines, ink titles and muted
+     summaries in Manrope.
+-->
+<resources>
+    <color name="cyclon_ink">#FF171719</color>
+    <color name="cyclon_muted">#FF5B5B63</color>
+    <color name="cyclon_hairline">#FFDEDEE3</color>
+
+    <dimen name="cyclon_hairline">1dp</dimen>
+    <dimen name="cyclon_row_padding_horizontal">22dp</dimen>
+    <dimen name="cyclon_row_padding_vertical">15dp</dimen>
+    <dimen name="cyclon_row_gap">16dp</dimen>
+    <dimen name="cyclon_icon_size">20dp</dimen>
+    <dimen name="cyclon_search_margin">18dp</dimen>
+
+    <style name="TextAppearance.CyclonSearchTitle" parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:fontFamily">cyclon-sans</item>
+        <item name="android:textFontWeight">600</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">-0.0125</item>
+        <item name="android:textColor">@color/cyclon_ink</item>
+    </style>
+
+    <style name="TextAppearance.CyclonSearchSummary" parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:fontFamily">cyclon-sans</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/cyclon_muted</item>
+    </style>
+
+    <style name="TextAppearance.CyclonSearchBreadcrumb" parent="@style/TextAppearance.CyclonSearchSummary">
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

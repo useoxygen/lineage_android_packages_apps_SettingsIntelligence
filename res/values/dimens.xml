@@ -26,10 +26,11 @@
 
     <!-- Search bar -->
     <dimen name="search_bar_container_top_padding">8dp</dimen>
-    <dimen name="search_bar_corner_radius">40dp</dimen>
-    <dimen name="search_bar_padding_start">24dp</dimen>
+    <!-- Cyclon: Settings home's field, 48dp high and half of that round. -->
+    <dimen name="search_bar_corner_radius">24dp</dimen>
+    <dimen name="search_bar_padding_start">4dp</dimen>
 
-    <dimen name="search_bar_height">72dp</dimen>
+    <dimen name="search_bar_height">48dp</dimen>
     <dimen name="search_bar_text_size">20sp</dimen>
 
     <!-- Dashboard image tile size -->

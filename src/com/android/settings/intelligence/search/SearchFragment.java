@@ -150,6 +150,7 @@ public class SearchFragment extends Fragment implements SearchView.OnQueryTextLi
         mResultsRecyclerView.setAdapter(mSearchAdapter);
         mResultsRecyclerView.setLayoutManager(new LinearLayoutManager(activity));
         mResultsRecyclerView.addOnScrollListener(mScrollListener);
+        mResultsRecyclerView.addItemDecoration(new CyclonHairlineDecoration(activity));
         ViewCompat.setOnApplyWindowInsetsListener(mResultsRecyclerView, (v, windowInsets) -> {
             final Insets insets = windowInsets.getInsets(
                     WindowInsetsCompat.Type.systemBars()

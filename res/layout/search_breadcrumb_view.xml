@@ -21,6 +21,5 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:paddingTop="5dp"
-    android:textAppearance="?android:attr/textAppearanceListItemSecondary"
-    android:textColor="@color/materialColorOnSurfaceVariant"
+    android:textAppearance="@style/TextAppearance.CyclonSearchBreadcrumb"
     android:ellipsize="marquee"/>

@@ -20,18 +20,18 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+    android:paddingEnd="@dimen/cyclon_row_padding_horizontal"
     android:background="?android:attr/selectableItemBackground"
     android:minHeight="?android:attr/listPreferredItemHeight"
     android:gravity="center_vertical">
 
     <ImageView
         android:id="@android:id/icon"
-        android:layout_width="@dimen/dashboard_tile_image_size"
-        android:layout_height="@dimen/dashboard_tile_image_size"
+        android:layout_width="@dimen/cyclon_icon_size"
+        android:layout_height="@dimen/cyclon_icon_size"
         android:scaleType="centerInside"
-        android:layout_marginStart="@dimen/dashboard_tile_image_margin"
-        android:layout_marginEnd="@dimen/dashboard_tile_image_margin"
+        android:layout_marginStart="@dimen/cyclon_row_padding_horizontal"
+        android:layout_marginEnd="@dimen/cyclon_row_gap"
         android:src="@drawable/ic_restore" />
 
     <TextView
@@ -39,6 +39,6 @@
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:gravity="center_vertical"
-        android:textAppearance="?android:attr/textAppearanceListItem" />
+        android:textAppearance="@style/TextAppearance.CyclonSearchTitle" />
 
 </LinearLayout>
