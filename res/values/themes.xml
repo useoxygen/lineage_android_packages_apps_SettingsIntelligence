@@ -21,6 +21,9 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:navigationBarDividerColor">@android:color/transparent</item>
+        <!-- Cyclon: the page is paper or black like Settings, not DeviceDefault's grey in dark. -->
+        <item name="android:colorBackground">@color/cyclon_paper</item>
+        <item name="android:windowBackground">@color/cyclon_paper</item>
     </style>
 
     <style name="Theme.Settings.NoActionBar">

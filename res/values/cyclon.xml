@@ -6,6 +6,7 @@
      summaries in Manrope.
 -->
 <resources>
+    <color name="cyclon_paper">#FFFAFAF9</color>
     <color name="cyclon_ink">#FF171719</color>
     <color name="cyclon_muted">#FF5B5B63</color>
     <color name="cyclon_hairline">#FFDEDEE3</color>
