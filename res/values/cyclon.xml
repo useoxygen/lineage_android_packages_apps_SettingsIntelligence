@@ -15,12 +15,13 @@
     <color name="cyclon_hairline">#FFDFDEDA</color>
 
     <dimen name="cyclon_hairline">1dp</dimen>
-    <dimen name="cyclon_row_padding_horizontal">22dp</dimen>
+    <!-- The kit's edge inset (.rows, .search: 28px in its 390px frame), as on Settings' pages. -->
+    <dimen name="cyclon_row_padding_horizontal">28dp</dimen>
     <dimen name="cyclon_row_padding_vertical">15dp</dimen>
     <dimen name="cyclon_row_gap">16dp</dimen>
     <dimen name="cyclon_icon_size">20dp</dimen>
     <!-- The field's edges line up with the rows' text, as the kit's search pill lines up with its rows. -->
-    <dimen name="cyclon_search_margin">22dp</dimen>
+    <dimen name="cyclon_search_margin">28dp</dimen>
 
     <style name="TextAppearance.CyclonSearchTitle" parent="@android:style/TextAppearance.DeviceDefault">
         <item name="android:fontFamily">cyclon-words</item>
