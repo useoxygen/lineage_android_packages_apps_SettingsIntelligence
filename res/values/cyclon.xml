@@ -1,38 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright 2026 TextGavel. Licensed under the Apache License, Version 2.0.
-     Cyclon: Settings search as design draft 4 draws Settings home: an unfilled search field
-     outlined with a hairline, then flat result rows split by hairlines, ink titles and muted
-     summaries in Manrope.
+     Cyclon "Words" (the UI kit's Settings page): Settings search on the kit's page colour, a filled pill search
+     field with a faint hint, then flat result rows split by faint inset lines, with ink titles and grey summaries
+     in Inter Tight (the system family "cyclon-words").
 -->
 <resources>
-    <color name="cyclon_paper">#FFFAFAF9</color>
-    <color name="cyclon_ink">#FF171719</color>
-    <color name="cyclon_muted">#FF5B5B63</color>
-    <color name="cyclon_hairline">#FFDEDEE3</color>
+    <!-- The kit's light colours (bg, fg, mut, faint, fill, line); the dark ones are in values-night. -->
+    <color name="cyclon_paper">#FFF5F4F0</color>
+    <color name="cyclon_ink">#FF151515</color>
+    <color name="cyclon_muted">#FF5C5C5C</color>
+    <color name="cyclon_faint">#FFA3A3A3</color>
+    <color name="cyclon_fill">#FFE9E8E4</color>
+    <color name="cyclon_hairline">#FFDFDEDA</color>
 
     <dimen name="cyclon_hairline">1dp</dimen>
     <dimen name="cyclon_row_padding_horizontal">22dp</dimen>
     <dimen name="cyclon_row_padding_vertical">15dp</dimen>
     <dimen name="cyclon_row_gap">16dp</dimen>
     <dimen name="cyclon_icon_size">20dp</dimen>
-    <dimen name="cyclon_search_margin">18dp</dimen>
+    <!-- The field's edges line up with the rows' text, as the kit's search pill lines up with its rows. -->
+    <dimen name="cyclon_search_margin">22dp</dimen>
 
     <style name="TextAppearance.CyclonSearchTitle" parent="@android:style/TextAppearance.DeviceDefault">
-        <item name="android:fontFamily">cyclon-sans</item>
-        <item name="android:textFontWeight">600</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:letterSpacing">-0.0125</item>
+        <item name="android:fontFamily">cyclon-words</item>
+        <item name="android:textFontWeight">400</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">-0.01</item>
         <item name="android:textColor">@color/cyclon_ink</item>
     </style>
 
     <style name="TextAppearance.CyclonSearchSummary" parent="@android:style/TextAppearance.DeviceDefault">
-        <item name="android:fontFamily">cyclon-sans</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">cyclon-words</item>
+        <item name="android:textFontWeight">400</item>
+        <item name="android:textSize">13sp</item>
         <item name="android:textColor">@color/cyclon_muted</item>
     </style>
 
     <style name="TextAppearance.CyclonSearchBreadcrumb" parent="@style/TextAppearance.CyclonSearchSummary">
         <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- The query in the search pill: 16sp ink, the hint faint. -->
+    <style name="TextAppearance.CyclonSearchQuery" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+        <item name="android:fontFamily">cyclon-words</item>
+        <item name="android:textFontWeight">400</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/cyclon_ink</item>
+        <item name="android:textColorHint">@color/cyclon_faint</item>
+    </style>
+
+    <!-- The search field's theme: Material Components for the card, with the kit's type and colours for the
+         SearchView inside it (its query field takes textAppearanceMediumInverse, editTextColor and the theme's
+         hint colour). -->
+    <style name="ThemeOverlay.CyclonSearchField" parent="@style/Theme.MaterialComponents.DayNight">
+        <item name="android:fontFamily">cyclon-words</item>
+        <item name="android:textAppearanceMediumInverse">@style/TextAppearance.CyclonSearchQuery</item>
+        <item name="android:editTextColor">@color/cyclon_ink</item>
+        <item name="android:textColorHint">@color/cyclon_faint</item>
+        <item name="android:colorControlNormal">@color/cyclon_muted</item>
     </style>
 </resources>
