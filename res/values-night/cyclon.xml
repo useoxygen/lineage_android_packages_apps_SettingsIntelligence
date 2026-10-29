@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright 2026 TextGavel. Licensed under the Apache License, Version 2.0.
+     The kit's dark colours, as solid colours on the #0B0B0D page.
 -->
 <resources>
-    <color name="cyclon_paper">#FF000000</color>
-    <color name="cyclon_ink">#FFF2F2F5</color>
-    <color name="cyclon_muted">#FF8E8E96</color>
-    <color name="cyclon_hairline">#FF242427</color>
+    <color name="cyclon_paper">#FF0B0B0D</color>
+    <color name="cyclon_ink">#FFF2F2F2</color>
+    <color name="cyclon_muted">#FF9D9D9E</color>
+    <color name="cyclon_faint">#FF59595A</color>
+    <color name="cyclon_fill">#FF1F1F20</color>
+    <color name="cyclon_hairline">#FF232325</color>
 </resources>

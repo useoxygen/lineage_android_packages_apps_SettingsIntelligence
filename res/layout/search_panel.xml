@@ -29,17 +29,16 @@
         android:paddingStart="@dimen/cyclon_search_margin"
         android:paddingEnd="@dimen/cyclon_search_margin"
         android:paddingTop="@dimen/search_bar_container_top_padding">
-        <!-- Cyclon: unfilled, outlined with a hairline, like the field on Settings home. -->
+        <!-- Cyclon (Words): the kit's search field, a filled pill 48dp high with no outline. -->
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/search_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/Theme.MaterialComponents.DayNight"
-            app:cardBackgroundColor="@android:color/transparent"
+            android:theme="@style/ThemeOverlay.CyclonSearchField"
+            app:cardBackgroundColor="@color/cyclon_fill"
             app:cardCornerRadius="@dimen/search_bar_corner_radius"
             app:cardElevation="0dp"
-            app:strokeColor="@color/cyclon_hairline"
-            app:strokeWidth="@dimen/cyclon_hairline">
+            app:strokeWidth="0dp">
             <Toolbar
                 android:id="@+id/search_toolbar"
                 android:layout_width="match_parent"
